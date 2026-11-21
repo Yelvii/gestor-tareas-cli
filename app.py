@@ -76,5 +76,25 @@ def eliminar_tarea():
         print("Debes ingresar un número válido.")
 
 
+def ejecutar_programa():
+    while True:
+        mostrar_menu()
+        opcion = input("Seleccione una opción: ")
+
+        if opcion == "1":
+            agregar_tarea()
+        elif opcion == "2":
+            listar_tareas()
+        elif opcion == "3":
+            completar_tarea()
+        elif opcion == "4":
+            eliminar_tarea()
+        elif opcion == "5":
+            print("Gracias por utilizar el gestor de tareas.")
+            break
+        else:
+            print("Opción inválida. Intente nuevamente.")
+
+
 if __name__ == "__main__":
-    mostrar_menu()
+    ejecutar_programa()
